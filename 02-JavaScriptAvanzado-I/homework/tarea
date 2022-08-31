@@ -31,7 +31,7 @@ var instructor = "Tony";
 if(true) {
     var instructor = "Franco";
 }
-console.log(instructor); //Tony
+console.log(instructor); //Franco
 
 
 var instructor = "Tony";
@@ -53,26 +53,30 @@ if (true) {
     console.log(instructor); // The Flash
     console.log(pm); // Reverse Flah
 }
-console.log(instructor); // Tony
+console.log(instructor); // The Flash
 console.log(pm); // Franco
+
+/*let te permite declarar variables limitando su alcance (scope) al bloque, declaración, o expresión donde se está usando. 
+a diferencia de la palabra clave var la cual define una variable global o local en una función sin importar el ámbito del bloque.
+*/
 
 
 6 / "3" // 2
 "2" * "3" // 6
 4 + 5 + "px" // 9px
-"$" + 4 + 5 // $9
+"$" + 4 + 5 // $45 concatena primero esta el string por eso queda 45
 "4" - 2 // 2
-"4px" - 2 // 2px
-7 / 0 // 0
+"4px" - 2 // NaN
+7 / 0 // Infinity
 {}[0] // undefined
 parseInt("09") // 9
-5 && 2 // 2
-2 && 5 // 5
-5 || 0 // 5
+5 && 2 // 2 devuelve el segundo elemento de los dos verdaderos
+2 && 5 // 5 devuelve el segundo elemento de los dos verdaderos
+5 || 0 // 5 
 0 || 5 // 5
-[3]+[3]-[10] // 23
-3>2>1 // undefined
-[] == ![] // falso
+[3]+[3]-[10] // 23 concatena
+3>2>1 // false 
+[] == ![] // true
 
 
 function test() {
@@ -93,9 +97,9 @@ function test() {
  function getFood(food) {
      if (food) {
          var snack = 'Friskies';
-         return snack; // Friskies
+         return snack; // al ser false no se ejecuta
      }
-     return snack; // Meow Mix
+     return snack; // Undefined porque es falso no entra
  }
  
  getFood(false);
@@ -107,16 +111,16 @@ var obj = {
    prop: {
       fullname: 'Aurelio De Rosa',
       getFullname: function() {
-         return this.fullname; // Aurelio De Rosa
+         return this.fullname; 
       }
    }
 };
 
-console.log(obj.prop.getFullname()); // Juan Perez
+console.log(obj.prop.getFullname()); // Aurelio De Rosa
 
-var test = obj.prop.getFullname; // Natalia Nerea
+var test = obj.prop.getFullname; 
 
-console.log(test()); //
+console.log(test()); // undefined
 
 
 function printing() {
