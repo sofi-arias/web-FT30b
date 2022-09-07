@@ -105,7 +105,9 @@ let getNombreAlumno = getNombre.bind(alumno);
 /*
   Ejercicio 4
   
-  Sin modificar la función crearCadena, usar bind para guardar, en las tres variables declaradas a continuación, tres funciones que retornen una cadena (string) y el delimitador especificado (asteriscos, guiones, y guiones bajos, respectivamente). Las funciones obtenidas deberían recibir solamente un argumento - la cadena de texto - ya que los otros argumentos habrán sido "bindeados". 
+  Sin modificar la función crearCadena, usar bind para guardar, en las tres variables declaradas a continuación, tres funciones que retornen 
+  una cadena (string) y el delimitador especificado (asteriscos, guiones, y guiones bajos, respectivamente). Las funciones obtenidas deberían 
+  recibir solamente un argumento - la cadena de texto - ya que los otros argumentos habrán sido "bindeados". 
 */
 
 function crearCadena(delimitadorIzquierda, delimitadorDerecha, cadena) {

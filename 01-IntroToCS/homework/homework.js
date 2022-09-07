@@ -35,7 +35,6 @@ function DecimalABinario(num) {
     return arr.join("");
 }
 
-
 module.exports = {
   BinarioADecimal,
   DecimalABinario,
